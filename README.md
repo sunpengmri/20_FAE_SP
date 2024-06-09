@@ -52,6 +52,15 @@ git clone https://github.com/salan668/FAE.git
 ```
 The .ui file has to be transferred to the .py file by pyuic manually. For example, GUI/HomePage.ui should be transferred to GUI/HomePage.py file. 
 
+conda install -c conda-forge pingouin
+cd Feature/GUI
+pyuic5 -o IccEstimation.py IccEstimation.ui
+cd BC/GUI/
+pyuic5 -o ModelPrediction.py ModelPrediction.ui 
+
+comment in MainFrameCall.py
+# sys._enablelegacywindowsfsencoding()
+
 ### Main Architecture of Project 
 - **HomePage**: The ui file and the Starting page for all modules.
 - **Feature**

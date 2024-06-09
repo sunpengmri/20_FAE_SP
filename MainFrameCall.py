@@ -4,7 +4,7 @@ from HomeUI.HomePageForm import HomePageForm
 
 
 if __name__ == '__main__':
-    sys._enablelegacywindowsfsencoding()
+    # sys._enablelegacywindowsfsencoding()
     app = QApplication(sys.argv)
     main_frame = HomePageForm()
     main_frame.show()
